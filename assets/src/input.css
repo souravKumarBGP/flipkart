@@ -1,35 +1,59 @@
 @import "tailwindcss";
 
 @theme{
-    --breakpoint-sm: 768px;
-    --breakpoint-md: 840px;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
     --breakpoint-lg: 996px;
-    --breakpoint-xl: 1024px;
-    --breakpoint-2xl: 1191px;
-    --breakpoint-3xl: 1336px;
-    --breakpoint-4xl: 1536px;
-    --breakpoint-5xl: 1600px;
+    --breakpoint-xl: 1191px;
+    --breakpoint-2xl: 1600px;
 }
 
-.wrapper{
-    width: 100% !important;
-    margin: 0 auto !important;
-    padding: 0 16px !important;
+body{
+    background: #f1f2f4;
 }
 
-@media all and (min-width: 996px){
-    .wrapper{
-        max-width: 996px !important;
-        min-width: 100%;
+.product_category img{
+    height: 65px !important;
+}
+.product_category > div::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.owl-stage-outer{
+    height: 240px !important;
+}
+.binner .item{
+    height: 240px !important;
+    height: 100%;
+    & img{
+        height: 240px !important;
+    }
+}
+.owl-nav{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-70%);
+    width: 100%;
+    @apply flex justify-between items-center;
+    
+    & button{
+        background-color: white !important;
+        width: 38px;
+        height: 75px;
+        & span{
+            font-size: 30px;
+            color: #676767;
+        }
+    }
+    .owl-prev{
+        margin-left: -4px !important;
+    }
+    .owl-next{
+        margin-right: -4px !important;
     }
 }
 
-@media all and (min-width: 1191px){
-    .wrapper{
-        max-width: 1600px !important;
-        min-width: 100% !important;
-    }
-}
 
 
 

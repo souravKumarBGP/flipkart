@@ -17,8 +17,230 @@
     </head>
     <body>
 
-        <h1> Hellow world </h1>
+        <!-- Header --> 
+        <header>
 
+            <!-- Navbar --> 
+            <nav class="bg-white px-4 h-30 md:h-auto md:static relative py-2 md:py-3 md:px-7">
+                <div class="sm:max-w-[480px]  md:max-w-[100%] lg:max-w-[996px] xl:max-w-[100%] 2xl:max-w-[1600px] mx-auto flex items-center justify-between">
+
+                    <!-- Left --> 
+                    <section class="left w-[40%] md:w-[65%] lg:w-[70%] xl:w-[60%] flex items-center justify-between md:justify-start mb-15 md:mb-0">
+
+                        <!-- Logo --> 
+                        <a href="#" class="flex justify-between w-full md:w-auto ">
+
+                            <button class="md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="8 0 24 24" class="text-gray-700">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1" d="M20 7H4m16 5H4m16 5H4"/>
+                                </svg>
+                            </button>
+                            
+                            <img src="./assets/images/logo.svg" alt="flipkart logo" class="w-[125px] md:w-[190px] ms-13 xl:w-[145px]" />
+                        </a>
+                        <!-- Search box --> 
+                        <form action="#" class="bg-[#edf5ff] w-[91%] absolute md:relative bottom-2 left-[50%] -translate-x-[50%] md:translate-x-0 md:left-0 md:bottom-0 ps-2 rounded-md overflow-hidden" >
+                            <!-- Input_box --> 
+                            <div class="flex items-center">
+                                <button type="button" class=" pe-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 50 50">
+                                        <path fill="currentColor" d="M23 36c-7.2 0-13-5.8-13-13s5.8-13 13-13s13 5.8 13 13s-5.8 13-13 13m0-24c-6.1 0-11 4.9-11 11s4.9 11 11 11s11-4.9 11-11s-4.9-11-11-11"/><path fill="currentColor" d="m32.682 31.267l8.98 8.98l-1.414 1.414l-8.98-8.98z"/>
+                                    </svg>
+                                </button>
+                                <input type="search" name="search" id="search" class="py-[8px] w-full outline-0 text-lg" placeholder="Search for Products, Brand and More" />
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- Right --> 
+                    <section class="right flex items-center justify-between w-[40%] md:w-[32%] lg:w-[25%] xl:w-[35%] pe-5 text-[17px] mb-15 md:mb-0">
+
+                        <button class="md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 1024 1024">
+                                <path fill="currentColor" d="M704.144 0H319.856c-53.024 0-96 42.976-96 96v832c0 53.024 42.976 96 96 96h384.288c53.024 0 96-42.976 96-96V96c0-53.024-42.976-96-96-96m32 928c0 17.664-14.336 32-32 32H319.856c-17.664 0-32-14.336-32-32V96c0-17.664 14.336-32 32-32h384.288c17.664 0 32 14.336 32 32zM512.048 800.176c-35.28 0-63.84 28.592-63.84 63.824s28.576 63.841 63.84 63.841c35.28 0 63.84-28.608 63.84-63.84s-28.56-63.825-63.84-63.825m64-704.176h-128c-17.664 0-32 14.336-32 32s14.336 32 32 32h128c17.664 0 32-14.336 32-32s-14.336-32-32-32"/>
+                            </svg>
+                        </button>
+                        
+                        <button class="flex items-center">
+                            <a href="#" class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 22">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.4">
+                                        <circle cx="12" cy="9" r="3"/><circle cx="12" cy="12" r="10"/>
+                                        <path stroke-linecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"/>
+                                    </g>
+                                </svg>
+                                <span class="flex items-center">
+                                    Login
+                                    <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 -6 50 60">
+                                        <path fill="currentColor" d="m25 32.4l-9.7-9.7l1.4-1.4l8.3 8.3l8.3-8.3l1.4 1.4z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </button>
+
+                        <button>
+                            <a href="#" class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-8 2a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/>
+                                </svg>
+                                <span class="hidden xl:block">
+                                    Cart
+                                </span>
+                            </a>
+                        </button>
+
+                        <button class="hidden md:block">
+                            <a href="#" class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M20.506 10.896v7.989q0 .69-.463 1.153t-1.152.462H5.12q-.69 0-1.153-.462t-.462-1.153v-8.027q-.633-.467-.926-1.225t-.013-1.617l.973-3.208q.2-.612.645-.96Q4.63 3.5 5.286 3.5h13.4q.655 0 1.098.326q.442.326.648.943l1.011 3.246q.281.86-.012 1.631t-.926 1.25m-6.3-.396q.963 0 1.438-.54q.475-.539.4-1.114L15.38 4.5h-2.873v4.2q0 .737.504 1.268q.504.532 1.196.532m-4.5 0q.806 0 1.303-.532t.497-1.268V4.5H8.633l-.666 4.423q-.061.466.407 1.021t1.332.556m-4.45 0q.661 0 1.124-.45t.576-1.123L7.583 4.5H5.287q-.327 0-.52.144t-.288.433l-.923 3.158q-.246.788.21 1.527t1.49.738m13.5 0q.898 0 1.434-.7q.537-.7.266-1.565l-.973-3.196q-.096-.289-.289-.414t-.519-.125h-2.246l.627 4.427q.113.673.576 1.123t1.124.45m-13.635 9h13.77q.269 0 .442-.173t.173-.442v-7.512q-.202.07-.384.098q-.181.029-.366.029q-.675 0-1.188-.263t-.974-.84q-.392.488-.967.795t-1.398.308q-.598 0-1.138-.279t-1.085-.825q-.502.546-1.113.825q-.61.279-1.164.279q-.629 0-1.226-.24t-1.047-.864q-.737.737-1.288.92q-.55.184-.912.184q-.185 0-.372-.029q-.188-.029-.378-.098v7.511q0 .27.173.443t.442.173m13.77 0H5.12z"/>
+                                </svg>
+                                <span class="hidden xl:block">
+                                    Become a seller
+                                </span>
+                            </a>
+                        </button>
+
+                        <button class="hidden md:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 30 20">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 12h1m-1 6h1M12 6h1"/>
+                            </svg>
+                        </button>
+                    </section>
+                </div>
+            </nav><!--./Navbar-->
+
+            <!-- Product category --> 
+            <section class="product_category mt-4 px-4">
+                <div class="w-full lg:w-[996px] xl:w-full overflow-x-auto mx-auto bg-white h-full">
+                    <ul class="flex justify-center w-[1300px] xl:w-full items-center gap-x-2 font-semibold text-[15px] py-3">
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category1.png" alt="category1" />
+                                <span>Kilos</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category2.png" alt="category2" />
+                                <span>Mobile</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category3.png" alt="category3" />
+                                <span class="flex items-center gap-1">
+                                    Fashion
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-5 -10 24 24">
+                                        <path fill="currentColor" d="m7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category4.png" alt="category4" />
+                                <span class="flex items-center">
+                                    Electronics
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-5 -10 24 24">
+                                        <path fill="currentColor" d="m7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category5.jpg" alt="category5" />
+                                <span class="flex items-center">
+                                    Home and Furniture
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-5 -10 24 24">
+                                        <path fill="currentColor" d="m7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/cetegory6.jpg" alt="category6" />
+                                <span>
+                                    Applinces
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category7.png" alt="category7" />
+                                <span>Fleight Bookings</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category8.png" alt="category8" />
+                                <span class="flex items-center">
+                                    Beauty, Toys & More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-5 -10 24 24">
+                                        <path fill="currentColor" d="m7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center flex-col p-4">
+                                <img src="./assets/images/category9.png" alt="category9" />
+                                <span class="flex items-center">
+                                    Two Wheelers
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-5 -10 24 24">
+                                        <path fill="currentColor" d="m7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section><!--./product_category-->
+
+            <!-- Binner crousel --> 
+            <section class="binner w-full px-4 mt-4">
+                <div class="w-full lg:w-[996px] xl:w-full mx-auto relative">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="./assets/images/binner1.jpg" alt="binner1" />
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/binner2.jpg" alt="binner2" />
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/binner3.jpg" alt="binner3" />
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/binner4.jpg" alt="binner4" />
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/binner5.jpg" alt="binner4" />
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/images/binner6.jpg" alt="binner4" />
+                        </div>
+                    </div>
+                </div>
+            </section><!--./Binner-->
+
+        </header><!--./Header-->
+        
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        
         <!-- External file links --> 
         <script src="./assets/js/jquery-3.7.1.min.js"></script>
         <script src="./assets/js/owl.carousel.min.js"></script>
